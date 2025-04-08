@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Danh sách sản phẩm (Bên trái) -->
+            <div class="col-md-9">
+                <div class="row" id="product-list"></div>
+            </div>
+
+            <!-- Thanh tìm kiếm và bộ lọc (Bên phải) -->
+            <div class="col-md-3">
+                <div class="card p-3">
+                    <h5 class="text-center">🔍 Tìm kiếm sản phẩm</h5>
+
+                    <!-- Ô tìm kiếm -->
+                    <div class="mb-3">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Nhập tên sản phẩm...">
+                    </div>
+
+                    <!-- Lọc theo loại sản phẩm -->
+                    <div class="mb-3">
+                        <select id="categoryFilter" class="form-select">
+                            <option value="">Tất cả loại</option>
+                            <option value="Táo">Táo</option>
+                            <option value="Cam">Cam</option>
+                            <option value="Xoài">Xoài</option>
+                            <option value="Chuối">Chuối</option>
+                            <option value="Dâu">Dâu</option>
+                            <option value="Sầu riêng">Sầu riêng</option>
+                        </select>
+                    </div>
+
+                    <!-- Lọc theo khoảng giá -->
+                    <div class="mb-3">
+                        <input type="number" id="minPriceFilter" class="form-control" placeholder="Giá từ (VND)">
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" id="maxPriceFilter" class="form-control" placeholder="Giá đến (VND)">
+                    </div>
+
+                    <!-- Nút lọc -->
+                    <button class="btn btn-primary w-100" onclick="filterProducts()">Lọc</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let products = [];
+
+        // Tải dữ liệu từ JSON
+        async function fetchProducts() {
+            try {
+                const response = await fetch('products.json');
+                products = await response.json();
+                renderProducts(products);
+            } catch (error) {
+                console.error('Lỗi khi tải sản phẩm:', error);
+            }
+        }
+
+        // Hiển thị danh sách sản phẩm
+        function renderProducts(products) {
+    const productList = document.getElementById("product-list");
+    productList.innerHTML = "";
+
+    products.forEach(product => {
+        const discountPrice = product.price * (1 - product.discount / 100);
+        const productHTML = `
+            <div class="col-md-4 mb-4">
+                <div class="product border p-3">
+                    <a href="product-detail.html?name=${encodeURIComponent(product.name)}" class="img-prod">
+                        <img class="img-fluid" src="${product.imageUrl}" alt="${product.name}" 
+                             style="height: 200px; width: 100%; object-fit: contain; background-color: #f8f9fa;">
+                        <span class="status">${product.discount}%</span>
+                    </a>
+                    <div class="text-center mt-3">
+                        <h5>${product.name}</h5>
+                        <p class="text-muted">${product.unit}</p>
+                        <p class="price">
+                            <span class="text-danger">${discountPrice.toLocaleString()} VND</span>
+                            <del class="text-muted ms-2">${product.price.toLocaleString()} VND</del>
+                        </p>
+                        <a href="product-detail.html?name=${encodeURIComponent(product.name)}" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        `;
+        productList.innerHTML += productHTML;
+    });
+}
+
+
+        // Tìm kiếm và lọc sản phẩm theo khoảng giá
+        function filterProducts() {
+            const searchText = document.getElementById("searchInput").value.toLowerCase();
+            const selectedCategory = document.getElementById("categoryFilter").value.toLowerCase();
+            const minPrice = document.getElementById("minPriceFilter").value;
+            const maxPrice = document.getElementById("maxPriceFilter").value;
+
+            const filteredProducts = products.filter(product => {
+                const discountPrice = product.price * (1 - product.discount / 100);
+                
+                const matchesSearch = product.name.toLowerCase().includes(searchText);
+                const matchesCategory = selectedCategory ? product.name.toLowerCase().includes(selectedCategory) : true;
+                
+                const matchesMinPrice = minPrice ? discountPrice >= minPrice : true;
+                const matchesMaxPrice = maxPrice ? discountPrice <= maxPrice : true;
+                
+                return matchesSearch && matchesCategory && matchesMinPrice && matchesMaxPrice;
+            });
+
+            renderProducts(filteredProducts);
+        }
+
+        // Gọi hàm khi trang tải xong
+        fetchProducts();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

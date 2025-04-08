@@ -1,0 +1,226 @@
+[
+    {
+        "name": "Tao đỏ",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 50000.0,
+        "discount": 10.0,
+        "imageUrl": "https://katatech.net/uploaded/tin-tuc/100g-tao-do-bao-nhieu-calo.webp"
+    },
+    {
+        "name": "Táo xanh",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 110000.0,
+        "discount": 8.0,
+        "imageUrl": "https://img.pikbest.com/origin/10/41/12/73CpIkbEsTgHE.png!w700wp"
+    },
+    {
+        "name": "Táo Fuji",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 130000.0,
+        "discount": 10.0,
+        "imageUrl": "https://bizweb.dktcdn.net/thumb/grande/100/091/032/products/tao-do-fuji-nhat.gif?v=1496823021667"
+    },
+    {
+        "name": "Cam sành",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 35000.0,
+        "discount": 5.0,
+        "imageUrl": "https://cafefcdn.com/zoom/700_438/203337114487263232/2021/3/1/photo1614591149845-1614591150090507759363.jpg"
+    },
+    {
+        "name": "Cam vàng",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 90000.0,
+        "discount": 7.0,
+        "imageUrl": "D:\\saveimage\\cam_vang.jpg"
+    },
+    {
+        "name": "Bưởi da xanh",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 70000.0,
+        "discount": 8.0,
+        "imageUrl": "D:\\saveimage\\buoi_da_xanh.jpg"
+    },
+    {
+        "name": "Xoài cát Hòa Lộc",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 80000.0,
+        "discount": 12.0,
+        "imageUrl": "D:\\saveimage\\xoai_cat_hoa_loc.jpg"
+    },
+    {
+        "name": "Xoài keo",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 50000.0,
+        "discount": 8.0,
+        "imageUrl": "D:\\saveimage\\xoai_keo.jpg"
+    },
+    {
+        "name": "Chuối tiêu",
+        "unit": "Nải",
+        "inStock": true,
+        "price": 30000.0,
+        "discount": 5.0,
+        "imageUrl": "D:\\saveimage\\chuoi_tieu.jpg"
+    },
+    {
+        "name": "Chuối sứ",
+        "unit": "Nải",
+        "inStock": true,
+        "price": 25000.0,
+        "discount": 3.0,
+        "imageUrl": "D:\\saveimage\\chuoi_su.jpg"
+    },
+    {
+        "name": "Dâu tây",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 200000.0,
+        "discount": 15.0,
+        "imageUrl": "D:\\saveimage\\dau_tay.jpg"
+    },
+    {
+        "name": "Dâu tằm",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 120000.0,
+        "discount": 10.0,
+        "imageUrl": "D:\\saveimage\\dau_tam.jpg"
+    },
+    {
+        "name": "Sầu riêng Ri6",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 180000.0,
+        "discount": 20.0,
+        "imageUrl": "https://media.istockphoto.com/id/1406546326/vi/anh/th%E1%BB%8Bt-c%E1%BB%A7a-m%E1%BB%99t-ng%C6%B0%E1%BB%9Di-%C4%91%C3%A0n-%C3%B4ng-l%C3%A0-ch%E1%BA%A5t-%C4%91%E1%BB%99c-c%E1%BB%A7a-m%E1%BB%99t-ng%C6%B0%E1%BB%9Di-%C4%91%C3%A0n-%C3%B4ng-kh%C3%A1c.jpg?s=612x612&w=0&k=20&c=vAWz3uVRB_oM-_AcCfkexbD46vmycGQpK8IT1C7JjM0="
+    },
+    {
+        "name": "Sầu riêng Monthong",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 190000.0,
+        "discount": 18.0,
+        "imageUrl": "D:\\saveimage\\sau_rieng_monthong.jpg"
+    },
+    {
+        "name": "Mít thái",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 45000.0,
+        "discount": 7.0,
+        "imageUrl": "D:\\saveimage\\mit_thai.jpg"
+    },
+    {
+        "name": "Mít tố nữ",
+"unit": "Kg",
+        "inStock": true,
+        "price": 60000.0,
+        "discount": 9.0,
+        "imageUrl": "D:\\saveimage\\mit_to_nu.jpg"
+    },
+    {
+        "name": "Kiwi vàng",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 160000.0,
+        "discount": 12.0,
+        "imageUrl": "D:\\saveimage\\kiwi_vang.jpg"
+    },
+    {
+        "name": "Kiwi xanh",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 150000.0,
+        "discount": 10.0,
+        "imageUrl": "D:\\saveimage\\kiwi_xanh.jpg"
+    },
+    {
+        "name": "Nho đỏ",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 90000.0,
+        "discount": 10.0,
+        "imageUrl": "D:\\saveimage\\nho_do.jpg"
+    },
+    {
+        "name": "Nho xanh",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 110000.0,
+        "discount": 12.0,
+        "imageUrl": "D:\\saveimage\\nho_xanh.jpg"
+    },
+    {
+        "name": "Dưa hấu ruột đỏ",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 20000.0,
+        "discount": 0.0,
+        "imageUrl": "D:\\saveimage\\dua_hau_ruot_do.jpg"
+    },
+    {
+        "name": "Dưa hấu không hạt",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 25000.0,
+        "discount": 2.0,
+        "imageUrl": "D:\\saveimage\\dua_hau_khong_hat.jpg"
+    },
+    {
+        "name": "Lê Hàn Quốc",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 130000.0,
+        "discount": 10.0,
+        "imageUrl": "D:\\saveimage\\le_han_quoc.jpg"
+    },
+    {
+        "name": "Lê Nam Phi",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 90000.0,
+        "discount": 8.0,
+        "imageUrl": "D:\\saveimage\\le_nam_phi.jpg"
+    },
+    {
+        "name": "Lựu đỏ",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 140000.0,
+        "discount": 12.0,
+        "imageUrl": "D:\\saveimage\\luu_do.jpg"
+    },
+    {
+        "name": "Lựu Ai Cập",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 130000.0,
+        "discount": 10.0,
+        "imageUrl": "D:\\saveimage\\luu_ai_cap.jpg"
+    },
+    {
+        "name": "Bơ 034",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 85000.0,
+        "discount": 10.0,
+        "imageUrl": "D:\\saveimage\\bo_034.jpg"
+    },
+    {
+        "name": "Bơ booth",
+        "unit": "Kg",
+        "inStock": true,
+        "price": 90000.0,
+        "discount": 12.0,
+        "imageUrl": "D:\\saveimage\\bo_booth.jpg"
+    }
+]
